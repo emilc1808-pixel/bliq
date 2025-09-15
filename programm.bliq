@@ -1,0 +1,3 @@
+say Wie heißt du?
+input name
+say Hallo !name!, schön dich zu treffen!
