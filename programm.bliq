@@ -1,3 +1,75 @@
-say Wie heißt du?
+# Variablen und Rechnen
+set a 10
+set b 3
+add a b
+sub b 1
+mul a 2
+div a b
+say Der Wert von a nach Berechnungen
+say Der Wert von b nach Berechnungen
+
+# Bedingungen: if else if else
+if a bigger 20
+    say a ist groesser als 20
+else if a bigger 10
+    say a ist groesser als 10 aber kleiner oder gleich 20
+else
+    say a ist kleiner oder gleich 10
+end
+
+if b equals 2
+    say b ist genau 2
+else
+    say b ist nicht 2
+end
+
+if b smaller 1
+    say b ist kleiner als 1
+else if b smaller 5
+    say b ist kleiner als 5 aber groesser oder gleich 1
+else
+    say b ist groesser oder gleich 5
+end
+
+# Schleifen
+set counter 1
+repeat 3
+    say Wiederholung Nummer counter
+    add counter 1
+end
+
+# Funktionen ohne Parameter
+function hallo
+    say Hallo Welt
+end
+
+function rechnen
+    set x 7
+    set y 5
+    add x y
+    say Ergebnis in Funktion ist x
+end
+
+call hallo
+call rechnen
+
+# Text mit Variablen
+say Der finale Wert von a ist a und b ist b
+
+# Repeat und if zusammen
+set z 0
+repeat 5
+    add z 1
+    if z equals 3
+        say Wir sind bei 3
+    else if z equals 5
+        say Wir sind bei 5
+    else
+        say Aktueller Wert von z ist z
+    end
+end
+
+# Benutzerinput
+say Wie heisst du
 input name
-say Hallo !name!, schön dich zu treffen!
+say Schoen dich zu treffen name
